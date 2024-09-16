@@ -23,10 +23,10 @@ import os
 
 def list_directory_contents(directory):
     try:
-        Get the list of files and directories
+        # Get the list of files and directories
         contents = os.listdir(directory)
         
-        Print the contents
+        # Print the contents
         print(f"Contents of directory '{directory}':")
         for item in contents:
             print(item)
@@ -39,6 +39,6 @@ def list_directory_contents(directory):
         print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
-    Specify the directory you want to list
+    # Specify the directory you want to list
     directory = input("/New floder")
     list_directory_contents(directory)
